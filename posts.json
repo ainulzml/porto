@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Opini Pertama — Tentang Pengembangan Web",
+    "summary": "Ringkasan singkat opini pertama tentang praktik terbaik pengembangan web di 2025.",
+    "date": "2025-10-18",
+    "slug": "opini-pertama",
+    "tags": ["web","opini","best-practices"],
+    "image": "assets/post-opini-1.png",
+    "file": "posts/2025-10-18-opini-pertama.md"
+  }
+]

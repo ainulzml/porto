@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loading… — [Nama Anda]</title>
+  <meta name="description" content="" id="meta-desc"/>
+  <script>
+    (function(){ try{ if(localStorage.getItem('site_theme_v1')==='dark') document.documentElement.classList.add('dark'); }catch(e){} })();
+    window.tailwind = { config: { darkMode: 'class' } }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- highlight + marked -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 antialiased">
+  <header class="sticky top-0 bg-transparent z-30">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-sky-600 to-teal-400 flex items-center justify-center text-white font-bold">⟡</div>
+        <div>
+          <div class="font-semibold text-lg">[Nama Anda]</div>
+          <div class="text-sm text-slate-500 dark:text-slate-400">Blog & Portofolio</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="index.html#projects" class="text-sm text-slate-600 dark:text-slate-300">Proyek</a>
+        <a href="blog.html" class="text-sm text-slate-600 dark:text-slate-300">Blog</a>
+        <button id="themeToggle" class="ml-3 inline-flex items-center px-3 py-2 rounded-md bg-white/80 dark:bg-slate-800/60">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <article id="post" class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow">
+      <a class="text-sm text-slate-500 dark:text-slate-300" href="blog.html">← Kembali ke Blog</a>
+      <h1 id="postTitle" class="text-2xl font-extrabold mt-3">Memuat…</h1>
+      <div id="postMeta" class="text-sm text-slate-500 dark:text-slate-400 mt-2 flex items-center gap-3"></div>
+      <div id="postBody" class="prose dark:prose-invert mt-6"></div>
+    </article>
+  </main>
+
+  <footer class="max-w-6xl mx-auto px-6 py-6 text-sm text-slate-500">
+    © <span id="year"></span> [Nama Anda].
+  </footer>
+
+  <script src="theme-tailwind.js"></script>
+  <script src="countapi.js"></script>
+  <script src="post.js" defer></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

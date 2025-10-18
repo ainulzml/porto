@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Sistem Manajemen Tugas",
+    "description": "Aplikasi web untuk manajemen tugas harian dengan fitur deadline, tag, dan notifikasi.",
+    "image": "assets/todo.png",
+    "tags": ["React","Node.js","Firebase"],
+    "repo_url": "https://github.com/username/todo-app",
+    "live_url": "https://todo.example.com",
+    "year": 2024
+  },
+  {
+    "title": "Landing Page Produk",
+    "description": "Landing page responsif untuk produk SaaS, termasuk animasi ringan dan form pendaftaran.",
+    "image": "assets/landing.png",
+    "tags": ["HTML","CSS","Accessibility"],
+    "repo_url": "https://github.com/username/landing-page",
+    "live_url": "https://product.example.com",
+    "year": 2023
+  },
+  {
+    "title": "Aplikasi Chat Mobile",
+    "description": "Prototipe aplikasi chat cross-platform menggunakan Flutter dan WebSocket.",
+    "image": "assets/chat.png",
+    "tags": ["Flutter","Socket"],
+    "repo_url": "https://github.com/username/chat-app",
+    "live_url": "",
+    "year": 2022
+  }
+]
